@@ -4,6 +4,12 @@ Shaker::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
+  root 'songs#index'
+
+  get 'songs/new' => 'songs#new'
+  post '/create' => 'songs#create'
+  get '/:artist/:title' => 'songs#show'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

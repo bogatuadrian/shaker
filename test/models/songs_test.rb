@@ -45,7 +45,6 @@ class SongsTest < ActiveSupport::TestCase
     assert_equal "Vava Voom (ft Lupe Fiasco)", song.title
     assert_equal 0, song.playcount
   end
-
   test "the song class has an 'all' method" do
     assert Song.respond_to?(:all)
   end

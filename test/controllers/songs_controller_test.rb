@@ -27,6 +27,8 @@ class SongsControllerTest < ActionController::TestCase
     assert_template :new
   end
 
+end
+__END__
   test "adding a new song actually creates it" do
     post :create, :song => { :artist => "Testy", :title => "The Test" }
 
